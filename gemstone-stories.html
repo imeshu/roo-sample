@@ -1,0 +1,2041 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    >
+
+    <meta
+        name="description"
+        content="Discover the story of gemstones with Roo Gemstones & Jewellery — from their creation deep within the Earth to Sri Lanka's gem heritage, cutting, colour and craftsmanship."
+    >
+
+    <title>Story of Gemstones | Roo Gemstones & Jewellery</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@300;400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Existing Roo Global CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Story Page CSS -->
+    <link rel="stylesheet" href="gemstone-stories.css">
+</head>
+
+
+<body class="gemstone-stories-page">
+
+
+<!-- =========================================================
+     HEADER / NAVIGATION
+     Taken from existing Roo homepage structure
+========================================================= -->
+
+<header class="site-header" id="siteHeader">
+
+    <div class="header-container">
+
+        <!-- Mobile Menu Button -->
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+        >
+            <span></span>
+            <span></span>
+        </button>
+
+
+        <!-- Desktop Left Navigation -->
+        <nav
+            class="desktop-nav desktop-nav--left"
+            aria-label="Primary navigation"
+        >
+            <a href="products.html">
+                Products
+            </a>
+
+            <a href="birthstones.html">
+                Birthstones
+            </a>
+
+            <a
+                href="gemstone-stories.html"
+                class="nav-current"
+                aria-current="page"
+            >
+                Story of Gemstones
+            </a>
+        </nav>
+
+
+        <!-- Logo -->
+        <a
+            href="index.html"
+            class="brand-logo"
+            aria-label="Roo Gemstones & Jewellery Home"
+        >
+            <img
+                class="brand-logo__main"
+                src="assets/logo/Logo_1.png"
+                alt="Roo Gemstones & Jewellery Logo"
+            >
+
+            <span class="brand-logo__sub">
+                FEEL THE FOREVER
+            </span>
+        </a>
+
+
+        <!-- Desktop Right Navigation -->
+        <nav class="desktop-nav desktop-nav--right">
+
+            <a href="bespoke.html">
+                Bespoke
+            </a>
+
+            <a href="our-story.html">
+                Our Story
+            </a>
+
+
+            <!-- Search -->
+            <a
+                href="search.html"
+                class="nav-icon"
+                aria-label="Search"
+            >
+                <svg viewBox="0 0 24 24">
+                    <circle cx="11" cy="11" r="6.5"></circle>
+                    <path d="M16 16L21 21"></path>
+                </svg>
+            </a>
+
+
+            <!-- Account -->
+            <a
+                href="account.html"
+                class="nav-icon"
+                aria-label="My account"
+            >
+                <svg viewBox="0 0 24 24">
+                    <circle cx="12" cy="8" r="4"></circle>
+                    <path d="M4.5 21C5.3 16.8 8 14.5 12 14.5C16 14.5 18.7 16.8 19.5 21"></path>
+                </svg>
+            </a>
+
+
+            <!-- Cart -->
+            <a
+                href="cart.html"
+                class="nav-icon nav-cart"
+                aria-label="Shopping bag"
+            >
+                <svg viewBox="0 0 24 24">
+                    <path d="M5 8H19L18 21H6L5 8Z"></path>
+                    <path d="M9 8V6C9 4.3 10.3 3 12 3C13.7 3 15 4.3 15 6V8"></path>
+                </svg>
+
+                <span class="cart-count">0</span>
+            </a>
+
+        </nav>
+
+
+        <!-- Mobile Actions -->
+        <div class="mobile-actions">
+
+            <a
+                href="account.html"
+                class="nav-icon"
+                aria-label="Account"
+            >
+                <svg viewBox="0 0 24 24">
+                    <circle cx="12" cy="8" r="4"></circle>
+                    <path d="M4.5 21C5.3 16.8 8 14.5 12 14.5C16 14.5 18.7 16.8 19.5 21"></path>
+                </svg>
+            </a>
+
+
+            <a
+                href="cart.html"
+                class="nav-icon nav-cart"
+                aria-label="Shopping bag"
+            >
+                <svg viewBox="0 0 24 24">
+                    <path d="M5 8H19L18 21H6L5 8Z"></path>
+                    <path d="M9 8V6C9 4.3 10.3 3 12 3C13.7 3 15 4.3 15 6V8"></path>
+                </svg>
+
+                <span class="cart-count">0</span>
+            </a>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================================================
+     MOBILE FULL SCREEN MENU
+========================================================= -->
+
+<div
+    class="mobile-menu"
+    id="mobileMenu"
+    aria-hidden="true"
+>
+
+    <div class="mobile-menu__background"></div>
+
+    <div class="mobile-menu__content">
+
+        <nav class="mobile-menu__nav">
+
+            <a href="products.html">
+                <span>01</span>
+                Products
+            </a>
+
+            <a href="birthstones.html">
+                <span>02</span>
+                Birthstones
+            </a>
+
+            <a href="gemstone-stories.html">
+                <span>03</span>
+                Story of Gemstones
+            </a>
+
+            <a href="bespoke.html">
+                <span>04</span>
+                Bespoke
+            </a>
+
+            <a href="our-story.html">
+                <span>05</span>
+                Our Story
+            </a>
+
+        </nav>
+
+
+        <div class="mobile-menu__secondary">
+
+            <a href="account.html">
+                My Account
+            </a>
+
+            <a href="wishlist.html">
+                Wishlist
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+        </div>
+
+
+        <div class="mobile-menu__social">
+
+            <a href="#" target="_blank">
+                Instagram
+            </a>
+
+            <a href="#" target="_blank">
+                Facebook
+            </a>
+
+            <a href="https://wa.me/94703663908" target="_blank">
+                WhatsApp
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<main>
+
+
+<!-- =========================================================
+     01 — STORY HERO
+========================================================= -->
+
+<section class="gs-hero" id="storyHero">
+
+    <div class="gs-hero__media">
+
+        <img
+            src="assets/stories/sapphire-story.webp"
+            alt="Natural blue sapphire resting within dark mineral rock"
+        >
+
+    </div>
+
+    <div class="gs-hero__overlay"></div>
+
+
+    <div class="gs-hero__content">
+
+        <p class="gs-kicker">
+            The Story of Gemstones
+        </p>
+
+        <h1>
+            Every Gemstone
+            <br>
+            <em>Has a Story.</em>
+        </h1>
+
+        <p class="gs-hero__copy">
+            Written by the Earth. Revealed by Human Hands.
+        </p>
+
+        <a
+            href="#birthOfGemstone"
+            class="gs-outline-button"
+        >
+            <span>Begin the Journey</span>
+            <span aria-hidden="true">→</span>
+        </a>
+
+    </div>
+
+
+    <div class="gs-scroll-mark" aria-hidden="true">
+
+        <span>Scroll</span>
+
+        <i></i>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     02 — BORN WITHIN THE EARTH
+========================================================= -->
+
+<section
+    class="gs-earth"
+    id="birthOfGemstone"
+>
+
+    <div class="gs-earth__top">
+
+        <div class="gs-earth__intro gs-reveal">
+
+            <p class="gs-kicker">
+                The Birth
+            </p>
+
+            <h2>
+                Born Within the Earth
+            </h2>
+
+            <p>
+                Millions of years beneath the Earth, heat,
+                pressure and minerals slowly create something
+                that may exist only once in a lifetime.
+            </p>
+
+        </div>
+
+
+        <div class="gs-formation gs-reveal">
+
+            <div class="gs-formation__item">
+
+                <span class="gs-process-icon">
+                    ◆
+                </span>
+
+                <strong>
+                    Pressure
+                </strong>
+
+            </div>
+
+
+            <span class="gs-process-line"></span>
+
+
+            <div class="gs-formation__item">
+
+                <span class="gs-process-icon">
+                    ◉
+                </span>
+
+                <strong>
+                    Heat
+                </strong>
+
+            </div>
+
+
+            <span class="gs-process-line"></span>
+
+
+            <div class="gs-formation__item">
+
+                <span class="gs-process-icon">
+                    ✦
+                </span>
+
+                <strong>
+                    Minerals
+                </strong>
+
+            </div>
+
+
+            <span class="gs-process-line"></span>
+
+
+            <div class="gs-formation__item">
+
+                <span class="gs-process-icon">
+                    ◷
+                </span>
+
+                <strong>
+                    Time
+                </strong>
+
+            </div>
+
+
+            <span class="gs-process-line"></span>
+
+
+            <div class="gs-formation__item">
+
+                <span class="gs-process-icon">
+                    ◇
+                </span>
+
+                <strong>
+                    Gemstone
+                </strong>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="gs-earth__visual">
+
+        <img
+            src="assets/stories/gem-cutting.webp"
+            alt="Gemstone formation beneath the Earth"
+            loading="lazy"
+        >
+
+        <div class="gs-earth__visual-overlay"></div>
+
+        <div
+            class="gs-earth__crystal"
+            aria-hidden="true"
+        >
+            ◇
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     03 — ISLAND OF GEMS
+========================================================= -->
+
+<section class="gs-island">
+
+    <div class="gs-island__background">
+
+        <img
+            src="assets/stories/ceylon-gemstone-story.png"
+            alt="Sri Lankan landscape representing the island's gemstone heritage"
+            loading="lazy"
+        >
+
+    </div>
+
+
+    <div class="gs-island__overlay"></div>
+
+
+    <div class="gs-island__inner">
+
+        <div class="gs-island__story gs-reveal">
+
+            <p class="gs-kicker">
+                Our Island
+            </p>
+
+            <h2>
+                From Ratnapura
+                <br>
+                to the World
+            </h2>
+
+            <p>
+                Sri Lanka — the island of gems. For centuries,
+                its rich lands have given the world some of the
+                most extraordinary gemstones, especially
+                Ceylon Sapphires.
+            </p>
+
+            <a
+                href="our-story.html"
+                class="gs-outline-button"
+            >
+                <span>Explore Sri Lanka's Story</span>
+                <span>→</span>
+            </a>
+
+        </div>
+
+
+        <div
+            class="gs-sri-lanka-map gs-reveal"
+            aria-hidden="true"
+        >
+            <div class="gs-map-shape">
+                <span>RATNAPURA</span>
+                <i></i>
+            </div>
+        </div>
+
+
+        <div class="gs-island__chapters gs-reveal">
+
+            <article class="gs-chapter">
+
+                <div class="gs-chapter__image">
+                    <img
+                        src="assets/stories/ceylon-gemstone-story.png"
+                        alt=""
+                        loading="lazy"
+                    >
+                </div>
+
+                <div>
+                    <h3>Ancient Ceylon</h3>
+                    <p>A rich heritage of gemstones.</p>
+                </div>
+
+            </article>
+
+
+            <article class="gs-chapter">
+
+                <div class="gs-chapter__image">
+                    <img
+                        src="assets/stories/ceylon-gemstone-story.png"
+                        alt=""
+                        loading="lazy"
+                    >
+                </div>
+
+                <div>
+                    <h3>The Gem Fields</h3>
+                    <p>Rich lands, rare treasures.</p>
+                </div>
+
+            </article>
+
+
+            <article class="gs-chapter">
+
+                <div class="gs-chapter__image">
+                    <img
+                        src="assets/stories/gem-cutting.webp"
+                        alt=""
+                        loading="lazy"
+                    >
+                </div>
+
+                <div>
+                    <h3>The Search</h3>
+                    <p>In the rivers and soil.</p>
+                </div>
+
+            </article>
+
+
+            <article class="gs-chapter">
+
+                <div class="gs-chapter__image">
+                    <img
+                        src="assets/stories/sapphire-story.webp"
+                        alt=""
+                        loading="lazy"
+                    >
+                </div>
+
+                <div>
+                    <h3>The Discovery</h3>
+                    <p>Nature's hidden gifts.</p>
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     04 — GEMSTONE ARCHIVE
+========================================================= -->
+
+<section
+    class="gs-archive"
+    id="gemstoneArchive"
+>
+
+    <div class="gs-section-heading gs-reveal">
+
+        <div>
+
+            <p class="gs-kicker">
+                The Gemstone Archive
+            </p>
+
+            <h2>
+                Explore Nature's Masterpieces
+            </h2>
+
+        </div>
+
+
+        <p class="gs-section-note">
+            Click a gemstone to discover its unique story
+            <span>→</span>
+        </p>
+
+    </div>
+
+
+    <div class="gs-gem-grid">
+
+
+        <!-- Blue Sapphire -->
+
+        <button
+            class="gs-gem-card gs-reveal"
+            type="button"
+            data-gem="blue-sapphire"
+        >
+
+            <div class="gs-gem-card__image">
+
+                <img
+                    src="assets/birthstones/september-sapphire.png"
+                    alt="Blue Sapphire"
+                    loading="lazy"
+                >
+
+            </div>
+
+            <h3>Blue Sapphire</h3>
+
+            <p>
+                Wisdom in every shade
+            </p>
+
+        </button>
+
+
+
+        <!-- Ruby -->
+
+        <button
+            class="gs-gem-card gs-reveal"
+            type="button"
+            data-gem="ruby"
+        >
+
+            <div class="gs-gem-card__image">
+
+                <img
+                    src="assets/birthstones/july-ruby.png"
+                    alt="Ruby"
+                    loading="lazy"
+                >
+
+            </div>
+
+            <h3>Ruby</h3>
+
+            <p>
+                Passion in pure form
+            </p>
+
+        </button>
+
+
+
+        <!-- Padparadscha -->
+
+        <button
+            class="gs-gem-card gs-gem-card--featured gs-reveal"
+            type="button"
+            data-gem="padparadscha"
+        >
+
+            <div class="gs-gem-card__image">
+
+                <img
+                    src="assets/gemstones/padparadscha-sapphire.png"
+                    alt="Padparadscha Sapphire"
+                    loading="lazy"
+                >
+
+            </div>
+
+            <h3>Padparadscha Sapphire</h3>
+
+            <p>
+                The rarest in the world
+            </p>
+
+        </button>
+
+
+
+        <!-- Yellow Sapphire -->
+
+        <button
+            class="gs-gem-card gs-reveal"
+            type="button"
+            data-gem="yellow-sapphire"
+        >
+
+            <div class="gs-gem-card__image">
+
+                <img
+                    src="assets/products/yellow-sapphire.png"
+                    alt="Yellow Sapphire"
+                    loading="lazy"
+                >
+
+            </div>
+
+            <h3>Yellow Sapphire</h3>
+
+            <p>
+                Joy and prosperity
+            </p>
+
+        </button>
+
+
+
+        <!-- Emerald -->
+
+        <button
+            class="gs-gem-card gs-reveal"
+            type="button"
+            data-gem="emerald"
+        >
+
+            <div class="gs-gem-card__image">
+
+                <img
+                    src="assets/birthstones/may-emerald.png"
+                    alt="Emerald"
+                    loading="lazy"
+                >
+
+            </div>
+
+            <h3>Emerald</h3>
+
+            <p>
+                Nature's renewal
+            </p>
+
+        </button>
+
+
+
+        <!-- Spinel -->
+
+        <button
+            class="gs-gem-card gs-reveal"
+            type="button"
+            data-gem="spinel"
+        >
+
+            <div class="gs-gem-card__image">
+
+                <img
+                    src="assets/gemstones/spinel.png"
+                    alt="Spinel"
+                    loading="lazy"
+                >
+
+            </div>
+
+            <h3>Spinel</h3>
+
+            <p>
+                A hidden treasure
+            </p>
+
+        </button>
+
+
+
+        <!-- Alexandrite -->
+
+        <button
+            class="gs-gem-card gs-reveal"
+            type="button"
+            data-gem="alexandrite"
+        >
+
+            <div class="gs-gem-card__image">
+
+                <img
+                    src="assets/gemstones/alexandrite.png"
+                    alt="Alexandrite"
+                    loading="lazy"
+                >
+
+            </div>
+
+            <h3>Alexandrite</h3>
+
+            <p>
+                Two colors, one story
+            </p>
+
+        </button>
+
+
+
+        <!-- Moonstone -->
+
+        <button
+            class="gs-gem-card gs-reveal"
+            type="button"
+            data-gem="moonstone"
+        >
+
+            <div class="gs-gem-card__image">
+
+                <img
+                    src="assets/gemstones/moonstone.png"
+                    alt="Moonstone"
+                    loading="lazy"
+                >
+
+            </div>
+
+            <h3>Moonstone</h3>
+
+            <p>
+                A glow of possibility
+            </p>
+
+        </button>
+
+
+
+        <!-- Garnet -->
+
+        <button
+            class="gs-gem-card gs-reveal"
+            type="button"
+            data-gem="garnet"
+        >
+
+            <div class="gs-gem-card__image">
+
+                <img
+                    src="assets/birthstones/january-garnet.png"
+                    alt="Garnet"
+                    loading="lazy"
+                >
+
+            </div>
+
+            <h3>Garnet</h3>
+
+            <p>
+                Strength and vitality
+            </p>
+
+        </button>
+
+
+
+        <!-- Aquamarine -->
+
+        <button
+            class="gs-gem-card gs-reveal"
+            type="button"
+            data-gem="aquamarine"
+        >
+
+            <div class="gs-gem-card__image">
+
+                <img
+                    src="assets/birthstones/march-aquamarine.png"
+                    alt="Aquamarine"
+                    loading="lazy"
+                >
+
+            </div>
+
+            <h3>Aquamarine</h3>
+
+            <p>
+                Calm and clarity
+            </p>
+
+        </button>
+
+
+
+        <!-- Tourmaline -->
+
+        <button
+            class="gs-gem-card gs-reveal"
+            type="button"
+            data-gem="tourmaline"
+        >
+
+            <div class="gs-gem-card__image">
+
+                <img
+                    src="assets/birthstones/october-tourmaline.png"
+                    alt="Tourmaline"
+                    loading="lazy"
+                >
+
+            </div>
+
+            <h3>Tourmaline</h3>
+
+            <p>
+                Balance and harmony
+            </p>
+
+        </button>
+
+
+
+        <!-- Topaz -->
+
+        <button
+            class="gs-gem-card gs-reveal"
+            type="button"
+            data-gem="topaz"
+        >
+
+            <div class="gs-gem-card__image">
+
+                <img
+                    src="assets/birthstones/november-topaz.png"
+                    alt="Topaz"
+                    loading="lazy"
+                >
+
+            </div>
+
+            <h3>Topaz</h3>
+
+            <p>
+                Brilliance in every hue
+            </p>
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     05 — GEMSTONE STORY FEATURE / POPUP STYLE
+========================================================= -->
+
+<section class="gs-featured-story">
+
+    <div class="gs-featured-story__blur"></div>
+
+
+    <div class="gs-story-panel gs-reveal">
+
+        <div class="gs-story-panel__image">
+
+            <img
+                id="featuredGemImage"
+                src="assets/gemstones/padparadscha-sapphire.png"
+                alt="Padparadscha Sapphire"
+                loading="lazy"
+            >
+
+        </div>
+
+
+        <div class="gs-story-panel__content">
+
+            <button
+                class="gs-story-panel__close"
+                type="button"
+                aria-label="Close story"
+            >
+                ×
+            </button>
+
+
+            <p
+                class="gs-kicker"
+                id="featuredGemKicker"
+            >
+                The Sunset Stone
+            </p>
+
+
+            <h2 id="featuredGemName">
+                Padparadscha Sapphire
+            </h2>
+
+
+            <div class="gs-story-facts">
+
+                <div>
+                    <span>◇</span>
+                    <strong>Origin</strong>
+                    <p id="featuredGemOrigin">
+                        Sri Lanka
+                    </p>
+                </div>
+
+
+                <div>
+                    <span>◇</span>
+                    <strong>Born From</strong>
+                    <p id="featuredGemBorn">
+                        Corundum
+                    </p>
+                </div>
+
+
+                <div>
+                    <span>◇</span>
+                    <strong>Color</strong>
+                    <p id="featuredGemColor">
+                        A rare balance of pink and orange
+                    </p>
+                </div>
+
+
+                <div class="gs-story-facts__story">
+                    <span>◇</span>
+                    <strong>Its Story</strong>
+
+                    <p id="featuredGemStory">
+                        Padparadscha sapphires are among the rarest
+                        and most coveted gemstones in the world.
+                        Their unique colour — a blend of pink and
+                        orange — resembles a tropical sunset,
+                        captured in stone.
+                    </p>
+                </div>
+
+
+                <div>
+                    <span>◇</span>
+                    <strong>Symbolism</strong>
+
+                    <p id="featuredGemSymbolism">
+                        Creativity · Love · Transformation
+                    </p>
+                </div>
+
+
+                <div>
+                    <span>◇</span>
+                    <strong>Rarity</strong>
+
+                    <p id="featuredGemRarity">
+                        Rare / Exceptional
+                    </p>
+                </div>
+
+            </div>
+
+
+            <a
+                href="products.html"
+                class="gs-outline-button"
+                id="featuredGemLink"
+            >
+                <span>Explore Gemstone Jewellery</span>
+                <span>→</span>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     06 — ROUGH TO RADIANCE
+========================================================= -->
+
+<section class="gs-transformation">
+
+    <div class="gs-transformation__heading gs-reveal">
+
+        <p class="gs-kicker">
+            The Transformation
+        </p>
+
+        <h2>
+            From Rough to Radiance
+        </h2>
+
+        <p>
+            Nature Begins the Story.
+            <br>
+            Craftsmanship Reveals It.
+        </p>
+
+    </div>
+
+
+    <div class="gs-transformation__steps">
+
+        <article class="gs-transform-card gs-reveal">
+
+            <div class="gs-transform-card__image">
+
+                <img
+                    src="assets/stories/gem-cutting.webp"
+                    alt="Rough gemstone"
+                    loading="lazy"
+                >
+
+            </div>
+
+            <span>Rough</span>
+
+            <p>
+                A hidden treasure
+            </p>
+
+        </article>
+
+
+        <span class="gs-transform-arrow">
+            →
+        </span>
+
+
+        <article class="gs-transform-card gs-reveal">
+
+            <div class="gs-transform-card__image">
+
+                <img
+                    src="assets/birthstones/september-sapphire.png"
+                    alt="Cut blue sapphire"
+                    loading="lazy"
+                >
+
+            </div>
+
+            <span>Cut</span>
+
+            <p>
+                A new dimension
+            </p>
+
+        </article>
+
+
+        <span class="gs-transform-arrow">
+            →
+        </span>
+
+
+        <article class="gs-transform-card gs-reveal">
+
+            <div class="gs-transform-card__image">
+
+                <img
+                    src="assets/products/blue-sapphire.png"
+                    alt="Blue sapphire jewellery"
+                    loading="lazy"
+                >
+
+            </div>
+
+            <span>Jewel</span>
+
+            <p>
+                A lasting legacy
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     07 — ART OF CUTTING
+========================================================= -->
+
+<section class="gs-cutting">
+
+    <div class="gs-cutting__heading gs-reveal">
+
+        <p class="gs-kicker">
+            The Craft
+        </p>
+
+        <h2>
+            The Art of Cutting
+        </h2>
+
+        <p>
+            Light Is the Final Ingredient.
+        </p>
+
+    </div>
+
+
+    <div class="gs-cut-list">
+
+        <div class="gs-cut gs-reveal">
+            <span class="gs-cut-shape gs-cut-shape--oval"></span>
+            <strong>Oval</strong>
+        </div>
+
+        <div class="gs-cut gs-reveal">
+            <span class="gs-cut-shape gs-cut-shape--cushion"></span>
+            <strong>Cushion</strong>
+        </div>
+
+        <div class="gs-cut gs-reveal">
+            <span class="gs-cut-shape gs-cut-shape--emerald"></span>
+            <strong>Emerald</strong>
+        </div>
+
+        <div class="gs-cut gs-reveal">
+            <span class="gs-cut-shape gs-cut-shape--pear"></span>
+            <strong>Pear</strong>
+        </div>
+
+        <div class="gs-cut gs-reveal">
+            <span class="gs-cut-shape gs-cut-shape--round"></span>
+            <strong>Round</strong>
+        </div>
+
+        <div class="gs-cut gs-reveal">
+            <span class="gs-cut-shape gs-cut-shape--princess"></span>
+            <strong>Princess</strong>
+        </div>
+
+    </div>
+
+
+    <div class="gs-cutting__image">
+
+        <img
+            src="assets/stories/gem-cutting.webp"
+            alt="The art of gemstone cutting"
+            loading="lazy"
+        >
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     08 — COLOR HAS A LANGUAGE
+========================================================= -->
+
+<section class="gs-colors">
+
+    <div class="gs-colors__intro">
+
+        <p class="gs-kicker">
+            The Language of Color
+        </p>
+
+        <h2>
+            Color Has a Language
+        </h2>
+
+        <p>
+            Each hue carries a feeling, a meaning,
+            a story of its own.
+        </p>
+
+    </div>
+
+
+    <div class="gs-color-list">
+
+        <article class="gs-color gs-color--blue">
+
+            <img
+                src="assets/birthstones/september-sapphire.png"
+                alt=""
+                loading="lazy"
+            >
+
+            <strong>Blue</strong>
+            <span>Wisdom &amp; Loyalty</span>
+
+        </article>
+
+
+        <article class="gs-color gs-color--pink">
+
+            <img
+                src="assets/gemstones/padparadscha-sapphire.png"
+                alt=""
+                loading="lazy"
+            >
+
+            <strong>Pink</strong>
+            <span>Love &amp; Compassion</span>
+
+        </article>
+
+
+        <article class="gs-color gs-color--padparadscha">
+
+            <img
+                src="assets/gemstones/padparadscha-sapphire.png"
+                alt=""
+                loading="lazy"
+            >
+
+            <strong>Padparadscha</strong>
+            <span>Creativity &amp; Joy</span>
+
+        </article>
+
+
+        <article class="gs-color gs-color--yellow">
+
+            <img
+                src="assets/birthstones/november-topaz.png"
+                alt=""
+                loading="lazy"
+            >
+
+            <strong>Yellow</strong>
+            <span>Prosperity &amp; Success</span>
+
+        </article>
+
+
+        <article class="gs-color gs-color--red">
+
+            <img
+                src="assets/birthstones/july-ruby.png"
+                alt=""
+                loading="lazy"
+            >
+
+            <strong>Red</strong>
+            <span>Passion &amp; Courage</span>
+
+        </article>
+
+
+        <article class="gs-color gs-color--green">
+
+            <img
+                src="assets/birthstones/may-emerald.png"
+                alt=""
+                loading="lazy"
+            >
+
+            <strong>Green</strong>
+            <span>Renewal &amp; Growth</span>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     09 — MEANING & SYMBOLISM
+========================================================= -->
+
+<section class="gs-meaning">
+
+    <div class="gs-meaning__intro gs-reveal">
+
+        <p class="gs-kicker gs-kicker--dark">
+            More Than Beauty
+        </p>
+
+        <h2>
+            Meaning &amp; Symbolism
+        </h2>
+
+        <p>
+            Across cultures, gemstones have long been
+            associated with love, protection, wisdom
+            and transformation.
+        </p>
+
+        <a
+            href="#journey"
+            class="gs-dark-button"
+        >
+            Learn More
+            <span>→</span>
+        </a>
+
+    </div>
+
+
+    <div class="gs-meaning__cards">
+
+        <article class="gs-meaning-card gs-reveal">
+
+            <img
+                src="assets/birthstones/july-ruby.png"
+                alt=""
+                loading="lazy"
+            >
+
+            <h3>
+                Love
+            </h3>
+
+            <p>
+                Brings hearts closer.
+            </p>
+
+        </article>
+
+
+        <article class="gs-meaning-card gs-reveal">
+
+            <img
+                src="assets/birthstones/september-sapphire.png"
+                alt=""
+                loading="lazy"
+            >
+
+            <h3>
+                Protection
+            </h3>
+
+            <p>
+                A sense of strength.
+            </p>
+
+        </article>
+
+
+        <article class="gs-meaning-card gs-reveal">
+
+            <img
+                src="assets/birthstones/february-amethyst.png"
+                alt=""
+                loading="lazy"
+            >
+
+            <h3>
+                Wisdom
+            </h3>
+
+            <p>
+                Guides the path.
+            </p>
+
+        </article>
+
+
+        <article class="gs-meaning-card gs-reveal">
+
+            <img
+                src="assets/birthstones/may-emerald.png"
+                alt=""
+                loading="lazy"
+            >
+
+            <h3>
+                Transformation
+            </h3>
+
+            <p>
+                A new chapter.
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     10 — GEMSTONE JOURNEY
+========================================================= -->
+
+<section
+    class="gs-journey"
+    id="journey"
+>
+
+    <div class="gs-journey__background">
+
+        <img
+            src="assets/stories/ceylon-gemstone-story.png"
+            alt=""
+            loading="lazy"
+        >
+
+    </div>
+
+    <div class="gs-journey__overlay"></div>
+
+
+    <div class="gs-journey__inner">
+
+        <div class="gs-journey__heading gs-reveal">
+
+            <p class="gs-kicker">
+                The Journey
+            </p>
+
+            <h2>
+                A Gemstone's Journey
+            </h2>
+
+            <p>
+                A story millions of years in the making —
+                now a part of yours.
+            </p>
+
+        </div>
+
+
+        <div class="gs-journey-track">
+
+            <div class="gs-journey-step gs-reveal">
+                <span>01</span>
+                <strong>Earth</strong>
+            </div>
+
+            <i></i>
+
+            <div class="gs-journey-step gs-reveal">
+                <span>02</span>
+                <strong>Discovery</strong>
+            </div>
+
+            <i></i>
+
+            <div class="gs-journey-step gs-reveal">
+                <span>03</span>
+                <strong>Selection</strong>
+            </div>
+
+            <i></i>
+
+            <div class="gs-journey-step gs-reveal">
+                <span>04</span>
+                <strong>Processing</strong>
+            </div>
+
+            <i></i>
+
+            <div class="gs-journey-step gs-reveal">
+                <span>05</span>
+                <strong>Setting</strong>
+            </div>
+
+            <i></i>
+
+            <div class="gs-journey-step gs-reveal">
+                <span>06</span>
+                <strong>You</strong>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     11 — DISCOVER YOUR STONE
+========================================================= -->
+
+<section class="gs-discover">
+
+    <div class="gs-discover__intro">
+
+        <p class="gs-kicker gs-kicker--dark">
+            Find Yours
+        </p>
+
+        <h2>
+            Discover Your Stone
+        </h2>
+
+        <p>
+            Explore gemstones by what matters most to you.
+        </p>
+
+    </div>
+
+
+    <div class="gs-discover__grid">
+
+        <a
+            href="birthstones.html"
+            class="gs-discover-card gs-reveal"
+        >
+
+            <span class="gs-discover-icon">
+                □
+            </span>
+
+            <strong>
+                By Birth Month
+            </strong>
+
+            <small>
+                Your stone, your story.
+            </small>
+
+            <i>→</i>
+
+        </a>
+
+
+        <a
+            href="products.html"
+            class="gs-discover-card gs-reveal"
+        >
+
+            <span class="gs-discover-icon">
+                ◉
+            </span>
+
+            <strong>
+                By Color
+            </strong>
+
+            <small>
+                Find your favorite hue.
+            </small>
+
+            <i>→</i>
+
+        </a>
+
+
+        <a
+            href="#meaning"
+            class="gs-discover-card gs-reveal"
+        >
+
+            <span class="gs-discover-icon">
+                ✦
+            </span>
+
+            <strong>
+                By Meaning
+            </strong>
+
+            <small>
+                Find what resonates.
+            </small>
+
+            <i>→</i>
+
+        </a>
+
+
+        <a
+            href="#gemstoneArchive"
+            class="gs-discover-card gs-reveal"
+        >
+
+            <span class="gs-discover-icon">
+                ◇
+            </span>
+
+            <strong>
+                By Rarity
+            </strong>
+
+            <small>
+                For something truly unique.
+            </small>
+
+            <i>→</i>
+
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     12 — FINAL CINEMATIC CTA
+========================================================= -->
+
+<section class="gs-final-cta">
+
+    <div class="gs-final-cta__background">
+
+        <img
+            src="assets/stories/sapphire-story.webp"
+            alt=""
+            loading="lazy"
+        >
+
+    </div>
+
+    <div class="gs-final-cta__overlay"></div>
+
+
+    <div class="gs-final-cta__brand">
+
+        <img
+            src="assets/logo/Logo_1.png"
+            alt="Roo Gemstones & Jewellery"
+            loading="lazy"
+        >
+
+    </div>
+
+
+    <div class="gs-final-cta__content gs-reveal">
+
+        <h2>
+            The Earth Created It.
+            <br>
+            Time Perfected It.
+            <br>
+            Now Its Next Chapter Is Yours.
+        </h2>
+
+
+        <div class="gs-final-cta__actions">
+
+            <a
+                href="products.html"
+                class="gs-button-light"
+            >
+                Explore Gemstones
+            </a>
+
+            <a
+                href="birthstones.html"
+                class="gs-outline-button"
+            >
+                Discover Birthstones
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="gs-final-cta__note">
+
+        <span>
+            A Legacy
+            <br>
+            Born in Stone
+        </span>
+
+        <i></i>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+
+<!-- =========================================================
+     FOOTER
+     Existing Roo homepage footer
+========================================================= -->
+
+<footer class="site-footer">
+
+    <div class="footer-top">
+
+
+        <!-- Brand -->
+
+        <div class="footer-brand">
+
+            <a href="index.html">
+
+                <div class="footer-logo">
+
+                    <img
+                        src="assets/logo/Logo_1.png"
+                        alt="Roo Gemstones & Jewellery Logo"
+                    >
+
+                </div>
+
+            </a>
+
+
+            <p>
+                Natural gemstones and jewellery shaped by
+                the beauty, heritage and character of Sri Lanka.
+            </p>
+
+        </div>
+
+
+
+        <!-- Explore -->
+
+        <div class="footer-column">
+
+            <h3>
+                Explore
+            </h3>
+
+            <a href="products.html">
+                Products
+            </a>
+
+            <a href="birthstones.html">
+                Birthstones
+            </a>
+
+            <a href="gemstone-stories.html">
+                Story of Gemstones
+            </a>
+
+            <a href="bespoke.html">
+                Bespoke
+            </a>
+
+        </div>
+
+
+
+        <!-- Roo -->
+
+        <div class="footer-column">
+
+            <h3>
+                Roo
+            </h3>
+
+            <a href="our-story.html">
+                Our Story
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+            <a href="faq.html">
+                FAQ
+            </a>
+
+            <a href="account.html">
+                My Account
+            </a>
+
+        </div>
+
+
+
+        <!-- Client Care -->
+
+        <div class="footer-column">
+
+            <h3>
+                Client Care
+            </h3>
+
+            <a href="shipping.html">
+                Shipping
+            </a>
+
+            <a href="returns.html">
+                Returns
+            </a>
+
+            <a href="privacy.html">
+                Privacy
+            </a>
+
+            <a href="terms.html">
+                Terms
+            </a>
+
+        </div>
+
+
+
+        <!-- Contact -->
+
+        <div class="footer-contact">
+
+            <h3>
+                Visit / Contact
+            </h3>
+
+            <p>
+                Roo Gemstones &amp; Jewellery (PVT) LTD
+            </p>
+
+            <p>
+                Colombo, Moratuwa
+                <br>
+                Sri Lanka, 10400
+            </p>
+
+            <a href="tel:+94703663908">
+                +94 70 366 3908
+            </a>
+
+
+            <div class="footer-socials">
+
+                <a
+                    href="#"
+                    target="_blank"
+                >
+                    Instagram
+                </a>
+
+                <a
+                    href="#"
+                    target="_blank"
+                >
+                    Facebook
+                </a>
+
+                <a
+                    href="https://wa.me/94703663908"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    WhatsApp
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="footer-bottom">
+
+        <p>
+            ©
+            <span id="footerYear"></span>
+            Roo Gemstones &amp; Jewellery (PVT) LTD.
+            All rights reserved.
+        </p>
+
+        <p>
+            Sri Lanka
+        </p>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =========================================================
+     WHATSAPP FLOATING BUTTON
+========================================================= -->
+
+<a
+    href="https://wa.me/94703663908"
+    class="whatsapp-float"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Chat with Roo on WhatsApp"
+>
+
+    <svg viewBox="0 0 24 24">
+
+        <path d="M20 11.8A8 8 0 0 1 8.2 18.9L4 20L5.1 16A8 8 0 1 1 20 11.8Z"></path>
+
+        <path d="M8.5 8.4C8.7 11.8 11.7 14.7 15.2 15.2"></path>
+
+    </svg>
+
+</a>
+
+
+
+<script src="gemstone-stories.js"></script>
+
+</body>
+</html>

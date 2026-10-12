@@ -1,0 +1,2463 @@
+/* =========================================================
+   ROO GEMSTONES & JEWELLERY
+   STORY OF GEMSTONES PAGE
+========================================================= */
+
+
+/* =========================================================
+   PAGE
+========================================================= */
+
+.gemstone-stories-page {
+    background: #031e15;
+    color: #f6f2e9;
+}
+
+.gemstone-stories-page main {
+    overflow: hidden;
+}
+
+.gemstone-stories-page .site-header {
+    color: #fff;
+}
+
+
+/* Current navigation item */
+
+.desktop-nav > a.nav-current::after {
+    width: 100%;
+}
+
+
+/* =========================================================
+   SHARED STORY TYPOGRAPHY
+========================================================= */
+
+.gs-kicker {
+    margin: 0 0 12px;
+
+    color: var(--gold-soft);
+
+    font-family: var(--font-sans);
+    font-size: 9px;
+    font-weight: 600;
+
+    letter-spacing: .22em;
+    text-transform: uppercase;
+}
+
+.gs-kicker--dark {
+    color: #7d6037;
+}
+
+.gs-outline-button {
+    min-height: 46px;
+
+    padding: 0 19px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 25px;
+
+    border:
+        1px solid rgba(216, 180, 122, .75);
+
+    color: #f6f2e9;
+
+    font-family: var(--font-sans);
+    font-size: 9px;
+    font-weight: 500;
+
+    letter-spacing: .08em;
+
+    transition:
+        background .35s ease,
+        color .35s ease,
+        transform .35s var(--ease-luxury);
+}
+
+.gs-outline-button:hover {
+    background: var(--gold-soft);
+    color: var(--emerald-dark);
+
+    transform: translateY(-2px);
+}
+
+.gs-dark-button {
+    min-height: 43px;
+
+    padding: 0 17px;
+
+    display: inline-flex;
+    align-items: center;
+
+    gap: 25px;
+
+    border: 1px solid rgba(3, 30, 21, .4);
+
+    color: var(--emerald-dark);
+
+    font-size: 9px;
+    font-weight: 500;
+
+    transition:
+        background .3s ease,
+        color .3s ease;
+}
+
+.gs-dark-button:hover {
+    background: var(--emerald-dark);
+    color: var(--ivory);
+}
+
+.gs-button-light {
+    min-height: 45px;
+
+    padding: 0 23px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--ivory);
+    color: var(--emerald-dark);
+
+    font-size: 9px;
+    font-weight: 600;
+
+    transition:
+        background .3s ease,
+        transform .3s var(--ease-luxury);
+}
+
+.gs-button-light:hover {
+    background: white;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.gs-hero {
+    position: relative;
+
+    width: 100%;
+    min-height: 680px;
+    height: 92vh;
+
+    display: flex;
+    align-items: center;
+
+    background: #01150e;
+
+    overflow: hidden;
+}
+
+.gs-hero__media,
+.gs-hero__overlay {
+    position: absolute;
+    inset: 0;
+}
+
+.gs-hero__media img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    transform: scale(1.035);
+
+    animation:
+        gsHeroScale 10s var(--ease-luxury) forwards;
+}
+
+@keyframes gsHeroScale {
+
+    to {
+        transform: scale(1);
+    }
+
+}
+
+.gs-hero__overlay {
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 20, 14, .94) 0%,
+            rgba(0, 20, 14, .74) 30%,
+            rgba(0, 20, 14, .25) 58%,
+            rgba(0, 20, 14, .08) 100%
+        ),
+        linear-gradient(
+            0deg,
+            rgba(0, 17, 11, .55),
+            transparent 40%
+        );
+}
+
+.gs-hero__content {
+    position: relative;
+    z-index: 3;
+
+    width:
+        min(
+            calc(100% - 140px),
+            var(--container)
+        );
+
+    margin: auto;
+
+    padding-top: 40px;
+}
+
+.gs-hero h1 {
+    max-width: 700px;
+
+    margin: 0 0 22px;
+
+    color: var(--ivory);
+
+    font-family: var(--font-serif);
+    font-size: clamp(60px, 6.2vw, 104px);
+    font-weight: 400;
+
+    line-height: .87;
+
+    letter-spacing: -.045em;
+}
+
+.gs-hero h1 em {
+    color: var(--gold-soft);
+}
+
+.gs-hero__copy {
+    margin-bottom: 32px;
+
+    color: rgba(255, 255, 255, .76);
+
+    font-size: 12px;
+}
+
+.gs-scroll-mark {
+    position: absolute;
+
+    right: 45px;
+    bottom: 55px;
+
+    z-index: 4;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 12px;
+}
+
+.gs-scroll-mark span {
+    color: rgba(255,255,255,.55);
+
+    font-size: 7px;
+    letter-spacing: .18em;
+
+    text-transform: uppercase;
+
+    writing-mode: vertical-rl;
+}
+
+.gs-scroll-mark i {
+    position: relative;
+
+    width: 1px;
+    height: 44px;
+
+    background: rgba(255,255,255,.28);
+
+    overflow: hidden;
+}
+
+.gs-scroll-mark i::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    top: -100%;
+
+    width: 100%;
+    height: 60%;
+
+    background: var(--gold-soft);
+
+    animation:
+        gsScrollLine 2.3s ease infinite;
+}
+
+@keyframes gsScrollLine {
+
+    to {
+        top: 120%;
+    }
+
+}
+
+
+/* =========================================================
+   BORN WITHIN EARTH
+========================================================= */
+
+.gs-earth {
+    position: relative;
+
+    background:
+        radial-gradient(
+            circle at 70% 20%,
+            #0a3b29,
+            #031e15 52%,
+            #01150e
+        );
+
+    color: var(--ivory);
+}
+
+.gs-earth__top {
+    width:
+        min(
+            calc(100% - 140px),
+            var(--container)
+        );
+
+    min-height: 250px;
+
+    margin: auto;
+
+    padding: 48px 0 42px;
+
+    display: grid;
+    grid-template-columns: .85fr 1.55fr;
+    align-items: center;
+
+    gap: 70px;
+}
+
+.gs-earth__intro h2 {
+    margin: 0 0 15px;
+
+    color: var(--ivory);
+
+    font-family: var(--font-serif);
+    font-size: clamp(36px, 3.3vw, 58px);
+    font-weight: 400;
+
+    line-height: .95;
+}
+
+.gs-earth__intro > p:last-child {
+    max-width: 440px;
+
+    margin: 0;
+
+    color: rgba(255,255,255,.65);
+
+    font-size: 11px;
+    line-height: 1.75;
+}
+
+.gs-formation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gs-formation__item {
+    min-width: 65px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.gs-process-icon {
+    width: 43px;
+    height: 43px;
+
+    display: grid;
+    place-items: center;
+
+    border:
+        1px solid rgba(216,180,122,.72);
+
+    border-radius: 50%;
+
+    color: var(--gold-soft);
+
+    font-size: 16px;
+}
+
+.gs-formation__item strong {
+    color: rgba(255,255,255,.76);
+
+    font-size: 9px;
+    font-weight: 400;
+}
+
+.gs-process-line {
+    width: clamp(25px, 5vw, 95px);
+    height: 1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(216,180,122,.15),
+            rgba(216,180,122,.8),
+            rgba(216,180,122,.15)
+        );
+}
+
+.gs-earth__visual {
+    position: relative;
+
+    height: 330px;
+
+    overflow: hidden;
+}
+
+.gs-earth__visual img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center 60%;
+
+    filter:
+        saturate(.72)
+        brightness(.72)
+        sepia(.12);
+}
+
+.gs-earth__visual-overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(3,30,21,.8),
+            rgba(3,30,21,.05) 32%,
+            rgba(1,14,10,.12)
+        ),
+        radial-gradient(
+            circle at 63% 67%,
+            rgba(230,154,76,.33),
+            transparent 17%
+        );
+}
+
+.gs-earth__crystal {
+    position: absolute;
+
+    left: 63%;
+    top: 58%;
+
+    color: rgba(255,245,220,.92);
+
+    font-family: serif;
+    font-size: 95px;
+
+    line-height: 1;
+
+    text-shadow:
+        0 0 18px rgba(255,183,94,.85),
+        0 0 50px rgba(255,153,61,.52);
+
+    transform:
+        translate(-50%, -50%)
+        rotate(45deg);
+}
+
+
+/* =========================================================
+   ISLAND OF GEMS
+========================================================= */
+
+.gs-island {
+    position: relative;
+
+    min-height: 460px;
+
+    display: flex;
+    align-items: center;
+
+    background: #031e15;
+    color: white;
+
+    overflow: hidden;
+}
+
+.gs-island__background,
+.gs-island__overlay {
+    position: absolute;
+    inset: 0;
+}
+
+.gs-island__background img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.gs-island__overlay {
+    background:
+        linear-gradient(
+            90deg,
+            rgba(2,28,19,.94),
+            rgba(2,28,19,.72) 43%,
+            rgba(2,28,19,.88)
+        );
+}
+
+.gs-island__inner {
+    position: relative;
+    z-index: 2;
+
+    width:
+        min(
+            calc(100% - 140px),
+            var(--container)
+        );
+
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1.15fr .55fr .8fr;
+    align-items: center;
+
+    gap: 50px;
+}
+
+.gs-island__story h2 {
+    margin: 0 0 17px;
+
+    color: var(--ivory);
+
+    font-family: var(--font-serif);
+    font-size: clamp(42px, 4vw, 68px);
+    font-weight: 400;
+
+    line-height: .9;
+}
+
+.gs-island__story > p:not(.gs-kicker) {
+    max-width: 480px;
+
+    margin-bottom: 24px;
+
+    color: rgba(255,255,255,.65);
+
+    font-size: 10px;
+    line-height: 1.75;
+}
+
+.gs-sri-lanka-map {
+    display: flex;
+    justify-content: center;
+}
+
+.gs-map-shape {
+    position: relative;
+
+    width: 145px;
+    height: 250px;
+
+    border:
+        1px solid rgba(216,180,122,.4);
+
+    border-radius:
+        52% 46% 60% 42% /
+        42% 42% 63% 58%;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(216,180,122,.12),
+            rgba(216,180,122,.02)
+        );
+
+    transform: rotate(6deg);
+}
+
+.gs-map-shape::before,
+.gs-map-shape::after {
+    content: "";
+
+    position: absolute;
+    inset: 15% 20%;
+
+    border-left:
+        1px solid rgba(216,180,122,.14);
+
+    transform: rotate(30deg);
+}
+
+.gs-map-shape::after {
+    transform: rotate(-35deg);
+}
+
+.gs-map-shape span {
+    position: absolute;
+
+    left: 43%;
+    top: 64%;
+
+    color: rgba(255,255,255,.65);
+
+    font-size: 6px;
+    letter-spacing: .1em;
+}
+
+.gs-map-shape i {
+    position: absolute;
+
+    left: 38%;
+    top: 62%;
+
+    width: 8px;
+    height: 8px;
+
+    border-radius: 50%;
+
+    background: var(--gold-soft);
+
+    box-shadow:
+        0 0 15px rgba(216,180,122,.8);
+}
+
+.gs-island__chapters {
+    border:
+        1px solid rgba(255,255,255,.08);
+}
+
+.gs-chapter {
+    min-height: 77px;
+
+    display: grid;
+    grid-template-columns: 115px 1fr;
+    align-items: center;
+
+    border-bottom:
+        1px solid rgba(255,255,255,.08);
+}
+
+.gs-chapter:last-child {
+    border-bottom: 0;
+}
+
+.gs-chapter__image {
+    height: 76px;
+
+    overflow: hidden;
+}
+
+.gs-chapter__image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition:
+        transform .7s var(--ease-luxury);
+}
+
+.gs-chapter:hover img {
+    transform: scale(1.08);
+}
+
+.gs-chapter > div:last-child {
+    padding: 12px 16px;
+}
+
+.gs-chapter h3 {
+    margin: 0 0 4px;
+
+    color: var(--ivory);
+
+    font-family: var(--font-serif);
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.gs-chapter p {
+    margin: 0;
+
+    color: rgba(255,255,255,.42);
+
+    font-size: 7px;
+}
+
+
+/* =========================================================
+   GEMSTONE ARCHIVE
+========================================================= */
+
+.gs-archive {
+    padding: 58px
+        max(
+            35px,
+            calc((100% - var(--container)) / 2)
+        )
+        65px;
+
+    background:
+        radial-gradient(
+            circle at 50% 0,
+            #093d2b,
+            #031e15 48%,
+            #01170f
+        );
+}
+
+.gs-section-heading {
+    margin-bottom: 28px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    gap: 30px;
+}
+
+.gs-section-heading h2 {
+    margin: 0;
+
+    color: var(--ivory);
+
+    font-family: var(--font-serif);
+    font-size: clamp(38px, 3.4vw, 57px);
+    font-weight: 400;
+}
+
+.gs-section-note {
+    margin: 0 0 7px;
+
+    color: rgba(255,255,255,.5);
+
+    font-size: 8px;
+}
+
+.gs-section-note span {
+    margin-left: 10px;
+
+    color: var(--gold-soft);
+}
+
+.gs-gem-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+
+    gap: 12px;
+}
+
+.gs-gem-card {
+    min-height: 190px;
+
+    padding: 22px 12px 17px;
+
+    border:
+        1px solid rgba(255,255,255,.08);
+
+    background:
+        rgba(255,255,255,.018);
+
+    color: white;
+
+    text-align: center;
+
+    cursor: pointer;
+
+    transition:
+        border-color .35s ease,
+        background .35s ease,
+        transform .4s var(--ease-luxury);
+}
+
+.gs-gem-card:hover,
+.gs-gem-card.active {
+    border-color:
+        rgba(216,180,122,.7);
+
+    background:
+        rgba(216,180,122,.045);
+
+    transform: translateY(-4px);
+}
+
+.gs-gem-card--featured {
+    border-color:
+        rgba(216,180,122,.7);
+}
+
+.gs-gem-card__image {
+    width: 88px;
+    height: 88px;
+
+    margin: 0 auto 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gs-gem-card__image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    filter:
+        drop-shadow(
+            0 9px 14px rgba(0,0,0,.42)
+        );
+
+    transition:
+        transform .5s var(--ease-luxury);
+}
+
+.gs-gem-card:hover img {
+    transform:
+        scale(1.08)
+        rotate(2deg);
+}
+
+.gs-gem-card h3 {
+    margin: 0 0 5px;
+
+    color: var(--ivory);
+
+    font-family: var(--font-serif);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.gs-gem-card p {
+    margin: 0;
+
+    color: rgba(255,255,255,.43);
+
+    font-size: 7px;
+    line-height: 1.4;
+}
+
+
+/* =========================================================
+   FEATURED GEMSTONE STORY
+========================================================= */
+
+.gs-featured-story {
+    position: relative;
+
+    padding: 28px 20px;
+
+    background: #08180f;
+
+    overflow: hidden;
+}
+
+.gs-featured-story__blur {
+    position: absolute;
+    inset: 0;
+
+    background:
+        radial-gradient(
+            circle at 18% 55%,
+            rgba(197,122,61,.35),
+            transparent 26%
+        ),
+        radial-gradient(
+            circle at 82% 45%,
+            rgba(164,102,49,.25),
+            transparent 27%
+        ),
+        #07170f;
+
+    filter: blur(8px);
+}
+
+.gs-story-panel {
+    position: relative;
+    z-index: 2;
+
+    width:
+        min(
+            calc(100% - 40px),
+            1120px
+        );
+
+    min-height: 390px;
+
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1.15fr;
+
+    border:
+        1px solid rgba(216,180,122,.52);
+
+    background:
+        rgba(3,30,21,.94);
+
+    box-shadow:
+        0 25px 80px rgba(0,0,0,.42);
+}
+
+.gs-story-panel__image {
+    position: relative;
+
+    min-height: 390px;
+
+    overflow: hidden;
+
+    background: #0a1a12;
+}
+
+.gs-story-panel__image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition:
+        opacity .35s ease,
+        transform .8s var(--ease-luxury);
+}
+
+.gs-story-panel:hover
+.gs-story-panel__image img {
+    transform: scale(1.025);
+}
+
+.gs-story-panel__content {
+    position: relative;
+
+    padding: 31px 38px 27px;
+}
+
+.gs-story-panel__close {
+    position: absolute;
+
+    right: 20px;
+    top: 14px;
+
+    background: transparent;
+    color: rgba(255,255,255,.75);
+
+    font-size: 25px;
+    font-weight: 200;
+
+    cursor: pointer;
+}
+
+.gs-story-panel__content h2 {
+    margin: 0 0 21px;
+
+    color: var(--ivory);
+
+    font-family: var(--font-serif);
+    font-size: 29px;
+    font-weight: 400;
+
+    text-transform: uppercase;
+}
+
+.gs-story-facts {
+    margin-bottom: 22px;
+
+    display: grid;
+
+    gap: 10px;
+}
+
+.gs-story-facts > div {
+    display: grid;
+    grid-template-columns: 22px 95px 1fr;
+    align-items: start;
+}
+
+.gs-story-facts > div > span {
+    color: var(--gold-soft);
+}
+
+.gs-story-facts strong {
+    color: rgba(255,255,255,.72);
+
+    font-size: 8px;
+    font-weight: 400;
+}
+
+.gs-story-facts p {
+    margin: 0;
+
+    color: rgba(255,255,255,.58);
+
+    font-size: 8px;
+    line-height: 1.55;
+}
+
+
+/* =========================================================
+   ROUGH TO RADIANCE
+========================================================= */
+
+.gs-transformation {
+    min-height: 260px;
+
+    padding: 38px
+        max(
+            35px,
+            calc((100% - var(--container)) / 2)
+        );
+
+    display: grid;
+    grid-template-columns: .8fr 2fr;
+    align-items: center;
+
+    gap: 55px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #05271c,
+            #021a12
+        );
+
+    border-top:
+        1px solid rgba(255,255,255,.08);
+
+    border-bottom:
+        1px solid rgba(255,255,255,.08);
+}
+
+.gs-transformation__heading h2 {
+    margin: 0 0 12px;
+
+    color: var(--ivory);
+
+    font-family: var(--font-serif);
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.gs-transformation__heading > p:last-child {
+    margin: 0;
+
+    color: rgba(255,255,255,.54);
+
+    font-size: 9px;
+    line-height: 1.6;
+}
+
+.gs-transformation__steps {
+    display: grid;
+    grid-template-columns:
+        1fr auto
+        1fr auto
+        1fr;
+
+    align-items: center;
+
+    gap: 14px;
+}
+
+.gs-transform-card {
+    text-align: center;
+}
+
+.gs-transform-card__image {
+    height: 145px;
+
+    margin-bottom: 9px;
+
+    overflow: hidden;
+
+    background: #061b13;
+}
+
+.gs-transform-card__image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition:
+        transform .7s var(--ease-luxury);
+}
+
+.gs-transform-card:hover img {
+    transform: scale(1.06);
+}
+
+.gs-transform-card span {
+    color: var(--gold-soft);
+
+    font-size: 7px;
+    letter-spacing: .1em;
+
+    text-transform: uppercase;
+}
+
+.gs-transform-card p {
+    margin: 3px 0 0;
+
+    color: rgba(255,255,255,.45);
+
+    font-size: 7px;
+}
+
+.gs-transform-arrow {
+    color: var(--gold-soft);
+
+    font-size: 20px;
+}
+
+
+/* =========================================================
+   CUTTING
+========================================================= */
+
+.gs-cutting {
+    min-height: 190px;
+
+    display: grid;
+    grid-template-columns: .72fr 1.45fr .7fr;
+    align-items: center;
+
+    background: #031e15;
+}
+
+.gs-cutting__heading {
+    padding-left:
+        max(
+            35px,
+            calc((100vw - var(--container)) / 2)
+        );
+}
+
+.gs-cutting__heading h2 {
+    margin: 0 0 8px;
+
+    color: var(--ivory);
+
+    font-family: var(--font-serif);
+    font-size: 34px;
+    font-weight: 400;
+}
+
+.gs-cutting__heading > p:last-child {
+    margin: 0;
+
+    color: rgba(255,255,255,.48);
+
+    font-size: 8px;
+}
+
+.gs-cut-list {
+    display: grid;
+    grid-template-columns:
+        repeat(6, 1fr);
+
+    gap: 20px;
+}
+
+.gs-cut {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.gs-cut strong {
+    color: rgba(255,255,255,.67);
+
+    font-size: 7px;
+    font-weight: 400;
+}
+
+.gs-cut-shape {
+    position: relative;
+
+    width: 43px;
+    height: 52px;
+
+    border:
+        1px solid rgba(255,255,255,.65);
+
+    display: block;
+
+    transition:
+        border-color .3s ease,
+        transform .3s ease;
+}
+
+.gs-cut:hover .gs-cut-shape {
+    border-color: var(--gold-soft);
+
+    transform: scale(1.08);
+}
+
+.gs-cut-shape::before,
+.gs-cut-shape::after {
+    content: "";
+
+    position: absolute;
+    inset: 7px;
+
+    border:
+        1px solid rgba(255,255,255,.28);
+
+    transform: rotate(45deg);
+}
+
+.gs-cut-shape--oval {
+    border-radius: 50%;
+}
+
+.gs-cut-shape--oval::before {
+    border-radius: 50%;
+}
+
+.gs-cut-shape--cushion {
+    border-radius: 12px;
+}
+
+.gs-cut-shape--emerald {
+    clip-path:
+        polygon(
+            20% 0,
+            80% 0,
+            100% 18%,
+            100% 82%,
+            80% 100%,
+            20% 100%,
+            0 82%,
+            0 18%
+        );
+}
+
+.gs-cut-shape--pear {
+    border-radius:
+        50% 50% 50% 5%;
+
+    transform: rotate(45deg);
+}
+
+.gs-cut:hover
+.gs-cut-shape--pear {
+    transform:
+        rotate(45deg)
+        scale(1.08);
+}
+
+.gs-cut-shape--round {
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+}
+
+.gs-cut-shape--princess {
+    width: 49px;
+    height: 49px;
+}
+
+.gs-cutting__image {
+    height: 190px;
+
+    overflow: hidden;
+}
+
+.gs-cutting__image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* =========================================================
+   COLOR LANGUAGE
+========================================================= */
+
+.gs-colors {
+    display: grid;
+    grid-template-columns: .72fr 2.28fr;
+
+    min-height: 180px;
+
+    background: #021b16;
+}
+
+.gs-colors__intro {
+    padding:
+        34px 30px
+        30px
+        max(
+            35px,
+            calc((100vw - var(--container)) / 2)
+        );
+
+    background:
+        linear-gradient(
+            90deg,
+            #031e15,
+            #062d32
+        );
+}
+
+.gs-colors__intro h2 {
+    margin: 0 0 8px;
+
+    color: var(--ivory);
+
+    font-family: var(--font-serif);
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.gs-colors__intro > p:last-child {
+    max-width: 250px;
+
+    margin: 0;
+
+    color: rgba(255,255,255,.55);
+
+    font-size: 8px;
+    line-height: 1.6;
+}
+
+.gs-color-list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.gs-color {
+    position: relative;
+
+    min-height: 180px;
+
+    padding: 27px 10px 19px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+    overflow: hidden;
+}
+
+.gs-color::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    opacity: .72;
+}
+
+.gs-color--blue::before {
+    background:
+        radial-gradient(
+            circle,
+            #063e9b,
+            #04193a 72%
+        );
+}
+
+.gs-color--pink::before {
+    background:
+        radial-gradient(
+            circle,
+            #d26b83,
+            #532335 72%
+        );
+}
+
+.gs-color--padparadscha::before {
+    background:
+        radial-gradient(
+            circle,
+            #e8755c,
+            #6c3025 72%
+        );
+}
+
+.gs-color--yellow::before {
+    background:
+        radial-gradient(
+            circle,
+            #e1a51d,
+            #61410b 72%
+        );
+}
+
+.gs-color--red::before {
+    background:
+        radial-gradient(
+            circle,
+            #b3131f,
+            #45090d 72%
+        );
+}
+
+.gs-color--green::before {
+    background:
+        radial-gradient(
+            circle,
+            #058f66,
+            #053526 72%
+        );
+}
+
+.gs-color img,
+.gs-color strong,
+.gs-color span {
+    position: relative;
+    z-index: 2;
+}
+
+.gs-color img {
+    width: 65px;
+    height: 65px;
+
+    margin-bottom: 7px;
+
+    object-fit: contain;
+
+    filter:
+        drop-shadow(
+            0 8px 12px rgba(0,0,0,.4)
+        );
+}
+
+.gs-color strong {
+    color: white;
+
+    font-size: 8px;
+    font-weight: 500;
+}
+
+.gs-color span {
+    margin-top: 4px;
+
+    color: rgba(255,255,255,.63);
+
+    font-size: 6.5px;
+}
+
+
+/* =========================================================
+   MEANING
+========================================================= */
+
+.gs-meaning {
+    padding: 32px
+        max(
+            35px,
+            calc((100% - var(--container)) / 2)
+        );
+
+    display: grid;
+    grid-template-columns: .78fr 2fr;
+
+    gap: 45px;
+
+    background: #f5f0e6;
+    color: var(--emerald-dark);
+}
+
+.gs-meaning__intro h2 {
+    margin: 0 0 8px;
+
+    font-family: var(--font-serif);
+    font-size: 34px;
+    font-weight: 400;
+}
+
+.gs-meaning__intro > p:not(.gs-kicker) {
+    max-width: 390px;
+
+    margin-bottom: 15px;
+
+    color: #666158;
+
+    font-size: 8px;
+    line-height: 1.55;
+}
+
+.gs-meaning__cards {
+    display: grid;
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 12px;
+}
+
+.gs-meaning-card {
+    min-height: 160px;
+
+    padding: 16px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background:
+        linear-gradient(
+            145deg,
+            #0a3022,
+            #02170f
+        );
+
+    color: white;
+
+    text-align: center;
+
+    border-radius: 2px;
+}
+
+.gs-meaning-card img {
+    width: 62px;
+    height: 62px;
+
+    margin-bottom: 7px;
+
+    object-fit: contain;
+}
+
+.gs-meaning-card h3 {
+    margin: 0 0 4px;
+
+    font-family: var(--font-serif);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.gs-meaning-card p {
+    margin: 0;
+
+    color: rgba(255,255,255,.48);
+
+    font-size: 6.5px;
+}
+
+
+/* =========================================================
+   JOURNEY
+========================================================= */
+
+.gs-journey {
+    position: relative;
+
+    min-height: 200px;
+
+    display: flex;
+    align-items: center;
+
+    background: #031e15;
+}
+
+.gs-journey__background,
+.gs-journey__overlay {
+    position: absolute;
+    inset: 0;
+}
+
+.gs-journey__background img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.gs-journey__overlay {
+    background:
+        linear-gradient(
+            90deg,
+            rgba(2,27,19,.97),
+            rgba(2,27,19,.66),
+            rgba(2,27,19,.9)
+        );
+}
+
+.gs-journey__inner {
+    position: relative;
+    z-index: 2;
+
+    width:
+        min(
+            calc(100% - 140px),
+            var(--container)
+        );
+
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: .75fr 2fr;
+    align-items: center;
+
+    gap: 50px;
+}
+
+.gs-journey__heading h2 {
+    margin: 0 0 8px;
+
+    color: var(--ivory);
+
+    font-family: var(--font-serif);
+    font-size: 31px;
+    font-weight: 400;
+}
+
+.gs-journey__heading > p:last-child {
+    margin: 0;
+
+    color: rgba(255,255,255,.47);
+
+    font-size: 7px;
+}
+
+.gs-journey-track {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gs-journey-track > i {
+    flex: 1;
+
+    height: 1px;
+
+    margin: 0 7px;
+
+    background:
+        rgba(216,180,122,.35);
+}
+
+.gs-journey-step {
+    min-width: 60px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 7px;
+}
+
+.gs-journey-step span {
+    width: 35px;
+    height: 35px;
+
+    display: grid;
+    place-items: center;
+
+    border:
+        1px solid rgba(216,180,122,.65);
+
+    border-radius: 50%;
+
+    color: var(--gold-soft);
+
+    font-size: 7px;
+}
+
+.gs-journey-step strong {
+    color: rgba(255,255,255,.68);
+
+    font-size: 7px;
+    font-weight: 400;
+}
+
+
+/* =========================================================
+   DISCOVER YOUR STONE
+========================================================= */
+
+.gs-discover {
+    padding: 27px
+        max(
+            35px,
+            calc((100% - var(--container)) / 2)
+        );
+
+    display: grid;
+    grid-template-columns: .72fr 2.28fr;
+
+    gap: 35px;
+
+    background: #f7f3eb;
+    color: var(--emerald-dark);
+}
+
+.gs-discover__intro h2 {
+    margin: 0 0 5px;
+
+    font-family: var(--font-serif);
+    font-size: 29px;
+    font-weight: 400;
+}
+
+.gs-discover__intro > p:last-child {
+    margin: 0;
+
+    color: #777168;
+
+    font-size: 7px;
+}
+
+.gs-discover__grid {
+    display: grid;
+    grid-template-columns:
+        repeat(4, 1fr);
+}
+
+.gs-discover-card {
+    position: relative;
+
+    min-height: 105px;
+
+    padding: 18px 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    border:
+        1px solid rgba(6,45,29,.1);
+
+    transition:
+        background .3s ease,
+        transform .35s var(--ease-luxury);
+}
+
+.gs-discover-card:hover {
+    background: white;
+
+    transform: translateY(-3px);
+}
+
+.gs-discover-icon {
+    margin-bottom: 11px;
+
+    color: #87683e;
+
+    font-size: 18px;
+}
+
+.gs-discover-card strong {
+    margin-bottom: 4px;
+
+    font-family: var(--font-serif);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.gs-discover-card small {
+    color: #817d75;
+
+    font-size: 6px;
+}
+
+.gs-discover-card i {
+    position: absolute;
+
+    right: 15px;
+    bottom: 14px;
+
+    color: var(--gold);
+
+    font-style: normal;
+}
+
+
+/* =========================================================
+   FINAL CTA
+========================================================= */
+
+.gs-final-cta {
+    position: relative;
+
+    min-height: 330px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #02170f;
+
+    overflow: hidden;
+}
+
+.gs-final-cta__background,
+.gs-final-cta__overlay {
+    position: absolute;
+    inset: 0;
+}
+
+.gs-final-cta__background img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center 55%;
+}
+
+.gs-final-cta__overlay {
+    background:
+        linear-gradient(
+            90deg,
+            rgba(1,22,15,.93),
+            rgba(1,22,15,.65),
+            rgba(1,22,15,.9)
+        );
+}
+
+.gs-final-cta__brand {
+    position: absolute;
+
+    z-index: 2;
+
+    left:
+        max(
+            35px,
+            calc((100vw - var(--container)) / 2)
+        );
+
+    top: 50%;
+
+    width: 155px;
+
+    transform: translateY(-50%);
+}
+
+.gs-final-cta__content {
+    position: relative;
+    z-index: 3;
+
+    text-align: center;
+}
+
+.gs-final-cta__content h2 {
+    margin: 0 0 25px;
+
+    color: var(--ivory);
+
+    font-family: var(--font-serif);
+    font-size: clamp(32px, 3.2vw, 53px);
+    font-weight: 400;
+
+    line-height: .92;
+}
+
+.gs-final-cta__actions {
+    display: flex;
+    justify-content: center;
+
+    gap: 12px;
+}
+
+.gs-final-cta__note {
+    position: absolute;
+
+    z-index: 3;
+
+    right:
+        max(
+            35px,
+            calc((100vw - var(--container)) / 2)
+        );
+
+    top: 50%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 16px;
+
+    transform: translateY(-50%);
+}
+
+.gs-final-cta__note span {
+    color: var(--gold-soft);
+
+    font-size: 7px;
+    font-weight: 600;
+
+    letter-spacing: .2em;
+    line-height: 1.6;
+
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.gs-final-cta__note i {
+    width: 1px;
+    height: 55px;
+
+    background:
+        linear-gradient(
+            var(--gold-soft),
+            transparent
+        );
+}
+
+
+/* =========================================================
+   REVEAL ANIMATION
+========================================================= */
+
+.gs-reveal {
+    opacity: 0;
+
+    transform: translateY(22px);
+
+    transition:
+        opacity .8s ease,
+        transform .9s var(--ease-luxury);
+}
+
+.gs-reveal.visible {
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .gs-hero__content,
+    .gs-earth__top,
+    .gs-island__inner,
+    .gs-journey__inner {
+        width: calc(100% - 60px);
+    }
+
+
+    /* Earth */
+
+    .gs-earth__top {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+
+    /* Island */
+
+    .gs-island {
+        padding: 65px 0;
+    }
+
+    .gs-island__inner {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .gs-sri-lanka-map {
+        display: none;
+    }
+
+
+    /* Archive */
+
+    .gs-gem-grid {
+        grid-template-columns:
+            repeat(4, 1fr);
+    }
+
+
+    /* Transformation */
+
+    .gs-transformation {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+
+    /* Cutting */
+
+    .gs-cutting {
+        grid-template-columns: 1fr;
+    }
+
+    .gs-cutting__heading {
+        padding: 35px;
+    }
+
+    .gs-cut-list {
+        padding: 0 35px 35px;
+    }
+
+    .gs-cutting__image {
+        display: none;
+    }
+
+
+    /* Colors */
+
+    .gs-colors {
+        grid-template-columns: 1fr;
+    }
+
+    .gs-colors__intro {
+        padding: 35px;
+    }
+
+
+    /* Meaning */
+
+    .gs-meaning {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Journey */
+
+    .gs-journey {
+        padding: 45px 0;
+    }
+
+    .gs-journey__inner {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+
+    /* Discover */
+
+    .gs-discover {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    /* Hero */
+
+    .gs-hero {
+        min-height: 720px;
+        height: 100svh;
+    }
+
+    .gs-hero__media img {
+        object-position: 61% center;
+    }
+
+    .gs-hero__overlay {
+        background:
+            linear-gradient(
+                0deg,
+                rgba(1,20,14,.95) 0%,
+                rgba(1,20,14,.72) 50%,
+                rgba(1,20,14,.3) 100%
+            );
+    }
+
+    .gs-hero__content {
+        width: calc(100% - 42px);
+
+        padding-top: 130px;
+
+        align-self: flex-end;
+    }
+
+    .gs-hero h1 {
+        max-width: 420px;
+
+        font-size: clamp(54px, 15vw, 74px);
+    }
+
+    .gs-scroll-mark {
+        display: none;
+    }
+
+
+    /* Earth */
+
+    .gs-earth__top {
+        width: calc(100% - 42px);
+
+        padding: 65px 0 45px;
+    }
+
+    .gs-formation {
+        overflow-x: auto;
+
+        justify-content: flex-start;
+
+        padding-bottom: 10px;
+
+        scrollbar-width: none;
+    }
+
+    .gs-formation::-webkit-scrollbar {
+        display: none;
+    }
+
+    .gs-formation__item {
+        min-width: 78px;
+    }
+
+    .gs-process-line {
+        min-width: 32px;
+    }
+
+    .gs-earth__visual {
+        height: 260px;
+    }
+
+    .gs-earth__crystal {
+        left: 57%;
+    }
+
+
+    /* Island */
+
+    .gs-island {
+        min-height: 760px;
+
+        align-items: flex-end;
+    }
+
+    .gs-island__overlay {
+        background:
+            linear-gradient(
+                0deg,
+                rgba(2,28,19,.98),
+                rgba(2,28,19,.58) 70%,
+                rgba(2,28,19,.3)
+            );
+    }
+
+    .gs-island__inner {
+        width: calc(100% - 42px);
+
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+    .gs-island__chapters {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .gs-chapter {
+        min-height: 120px;
+
+        grid-template-columns: 1fr;
+
+        border:
+            1px solid rgba(255,255,255,.07);
+    }
+
+    .gs-chapter__image {
+        height: 80px;
+    }
+
+
+    /* Archive */
+
+    .gs-archive {
+        padding: 60px 15px;
+    }
+
+    .gs-section-heading {
+        padding: 0 7px;
+
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .gs-section-note {
+        display: none;
+    }
+
+    .gs-gem-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 8px;
+    }
+
+    .gs-gem-card {
+        min-height: 170px;
+    }
+
+
+    /* Story panel */
+
+    .gs-featured-story {
+        padding: 18px 10px;
+    }
+
+    .gs-story-panel {
+        width: 100%;
+
+        grid-template-columns: 1fr;
+    }
+
+    .gs-story-panel__image {
+        min-height: 330px;
+    }
+
+    .gs-story-panel__content {
+        padding: 28px 20px;
+    }
+
+    .gs-story-panel__content h2 {
+        padding-right: 25px;
+
+        font-size: 25px;
+    }
+
+    .gs-story-facts > div {
+        grid-template-columns:
+            20px 82px 1fr;
+    }
+
+
+    /* Transformation */
+
+    .gs-transformation {
+        padding: 55px 21px;
+    }
+
+    .gs-transformation__steps {
+        grid-template-columns: 1fr;
+
+        gap: 14px;
+    }
+
+    .gs-transform-arrow {
+        transform: rotate(90deg);
+
+        text-align: center;
+    }
+
+    .gs-transform-card__image {
+        height: 220px;
+    }
+
+
+    /* Cutting */
+
+    .gs-cutting__heading {
+        padding: 50px 21px 35px;
+    }
+
+    .gs-cut-list {
+        padding: 0 21px 50px;
+
+        grid-template-columns:
+            repeat(3, 1fr);
+
+        gap: 35px 15px;
+    }
+
+
+    /* Color */
+
+    .gs-color-list {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .gs-color {
+        min-height: 155px;
+    }
+
+
+    /* Meaning */
+
+    .gs-meaning {
+        padding: 55px 15px;
+
+        gap: 35px;
+    }
+
+    .gs-meaning__intro {
+        padding: 0 6px;
+    }
+
+    .gs-meaning__cards {
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 8px;
+    }
+
+
+    /* Journey */
+
+    .gs-journey__inner {
+        width: calc(100% - 42px);
+    }
+
+    .gs-journey-track {
+        overflow-x: auto;
+
+        justify-content: flex-start;
+
+        padding-bottom: 15px;
+
+        scrollbar-width: none;
+    }
+
+    .gs-journey-track::-webkit-scrollbar {
+        display: none;
+    }
+
+    .gs-journey-step {
+        min-width: 78px;
+    }
+
+    .gs-journey-track > i {
+        min-width: 30px;
+    }
+
+
+    /* Discover */
+
+    .gs-discover {
+        padding: 50px 15px;
+    }
+
+    .gs-discover__intro {
+        padding: 0 6px;
+    }
+
+    .gs-discover__grid {
+        grid-template-columns:
+            1fr 1fr;
+    }
+
+    .gs-discover-card {
+        min-height: 125px;
+    }
+
+
+    /* Final CTA */
+
+    .gs-final-cta {
+        min-height: 460px;
+
+        padding: 70px 21px;
+    }
+
+    .gs-final-cta__background img {
+        object-position: 60% center;
+    }
+
+    .gs-final-cta__overlay {
+        background:
+            rgba(1,22,15,.78);
+    }
+
+    .gs-final-cta__brand,
+    .gs-final-cta__note {
+        display: none;
+    }
+
+    .gs-final-cta__content h2 {
+        font-size: 41px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 430px) {
+
+    .gs-hero h1 {
+        font-size: 53px;
+    }
+
+    .gs-island__chapters {
+        grid-template-columns: 1fr;
+    }
+
+    .gs-gem-card__image {
+        width: 72px;
+        height: 72px;
+    }
+
+    .gs-story-panel__image {
+        min-height: 280px;
+    }
+
+    .gs-story-facts > div {
+        grid-template-columns:
+            20px 70px 1fr;
+    }
+
+    .gs-meaning__cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .gs-discover__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gs-final-cta__actions {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .gs-reveal {
+        opacity: 1;
+
+        transform: none;
+    }
+
+    .gs-hero__media img {
+        animation: none;
+
+        transform: none;
+    }
+
+    .gs-scroll-mark i::after {
+        animation: none;
+    }
+
+}
