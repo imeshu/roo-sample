@@ -494,16 +494,16 @@ h2 em {
 .mobile-menu {
     position: fixed;
     inset: 0;
-
     z-index: 900;
-
     visibility: hidden;
     pointer-events: none;
+    
 }
 
 .mobile-menu.active {
     visibility: visible;
     pointer-events: auto;
+    
 }
 
 .mobile-menu__background {
@@ -2048,7 +2048,7 @@ h2 em {
         width: 23px;
         height: 1px;
 
-        background: currentColor;
+        background: var(--ivory);
 
         transition:
             transform .4s ease,
