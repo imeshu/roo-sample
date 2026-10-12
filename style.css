@@ -1842,12 +1842,7 @@ h2 em {
 }
 
 .footer-logo {
-    color: var(--gold);
-
-    font-family: var(--font-serif);
-    font-size: 72px;
-    line-height: .8;
-    letter-spacing: -.06em;
+    width: 200px;
 }
 
 .footer-brand p {
@@ -2557,7 +2552,7 @@ h2 em {
     }
 
     .footer-logo {
-        font-size: 65px;
+        width: 175px;
     }
 
     .footer-bottom {
